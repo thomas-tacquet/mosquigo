@@ -1,4 +1,4 @@
-ROM golang:latest
+FROM golang:latest
 
 ENV http_proxy=http://172.17.0.1:6865
 ENV https_proxy=http://172.17.0.1:6865
