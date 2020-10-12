@@ -8,8 +8,7 @@ RUN apt-get install -y mosquitto
 RUN apt-get install -y mosquitto-clients
 
 # For protobufs, need to add edge repository
-RUN sed -i '/edge/s/^#//' /etc/apk/repositories
-RUN apt-get install -y protoc
+RUN apt-get install -y protobuf-compiler
 RUN go get -u github.com/golang/protobuf/protoc-gen-go
 RUN go get github.com/golang/mock/gomock
 RUN go install github.com/golang/mock/mockgen
