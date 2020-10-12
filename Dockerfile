@@ -7,7 +7,8 @@ RUN wget http://repo.mosquitto.org/debian/mosquitto-stretch.list
 RUN apt-get install -y mosquitto
 RUN apt-get install -y mosquitto-clients
 
-# For protobufs
+# For protobufs, need to add edge repository
+RUN sed -i '/edge/s/^#//' /etc/apk/repositories
 RUN apt-get install -y protoc
 RUN go get -u github.com/golang/protobuf/protoc-gen-go
 RUN go get github.com/golang/mock/gomock
