@@ -11,6 +11,7 @@ RUN apt-get install -y mosquitto-clients
 RUN apt-get install -y protobuf-compiler
 RUN go get -u github.com/golang/protobuf/protoc-gen-go
 RUN go get github.com/golang/mock/gomock
+RUN go get github.com/golang/mock/mockgen
 RUN go install github.com/golang/mock/mockgen
 RUN go get golang.org/x/tools/go/packages
 
