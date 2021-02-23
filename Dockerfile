@@ -16,7 +16,7 @@ RUN go install github.com/golang/mock/mockgen
 RUN go get golang.org/x/tools/go/packages
 
 # Install golangci-lint
-RUN curl -sSfL https://raw.githubusercontent.com/golangci/golangci-lint/master/install.sh | sh -s -- -b $(go env GOPATH)/bin v1.36.0
+RUN curl -sSfL https://raw.githubusercontent.com/golangci/golangci-lint/master/install.sh | sh -s -- -b $(go env GOPATH)/bin v1.37.0
 RUN golangci-lint --version
 
 VOLUME ["`pwd`/sive-agc/"]
