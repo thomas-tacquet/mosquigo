@@ -6,6 +6,10 @@ This image is used for continuous integration, so it contains `golangci-lint` to
 
 # Changelog
 
+## v1.1.4
+### Fixed
+- version of mockgen
+
 ## v1.1.3
 
 ### Added
