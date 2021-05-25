@@ -6,6 +6,11 @@ This image is used for continuous integration, so it contains `golangci-lint` to
 
 # Changelog
 
+## v1.1.6
+### Changed
+- bump golangci-lint to version v1.40.1
+- removed mount point
+
 ## v1.1.5
 ### Changed
 - bump golangci-lint to version v1.39.0
