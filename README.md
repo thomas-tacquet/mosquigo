@@ -33,12 +33,18 @@ If you want to push your image, I let you some documentation about some differen
 
 # Changelog
 
-## v1.1.8
+## v1.1.9
+
+### Changed
+
+- bump golangci-lint to version v1.45.2
+- add some documentation
+-
+- ## v1.1.8
 
 ### Changed
 
 - bump golangci-lint to version v1.43.0
-- add some documentation
 
 ## v1.1.7
 
